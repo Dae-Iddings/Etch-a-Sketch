@@ -1,13 +1,16 @@
+* {
+    box-sizing: border-box;
+}
 .container {
-    display: grid;
-  grid-template-columns: auto auto auto;
-  background-color: #2196F3;
-  padding: 10px;
+ display: grid;
+ grid-template-columns: repeat(16, 25px [col-start]);
+ background-color: white;
 }
 .gridDiv {
-    background-color: rgba(255, 255, 255, 0.8);
-    border: 1px solid rgba(0, 0, 0, 0.8);
-    padding: 20px;
-    font-size: 30px;
-    text-align: center;
+    border: 2px solid black;
+    height: 25px;
+    width: 25px;
+}
+.hover {
+    background-color: black;
 }
