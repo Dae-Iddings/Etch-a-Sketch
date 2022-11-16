@@ -27,7 +27,7 @@ button {
     padding: 0;
     margin: 0;
 }
-.hover {
+.black {
     background-color: black;
 }
 .red {
@@ -53,4 +53,10 @@ button {
 }
 .light-blue {
     background-color: lightblue;
+}
+.white {
+    background-color: white;
+}
+.brown {
+    background-color: brown;
 }
