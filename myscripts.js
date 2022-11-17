@@ -38,7 +38,7 @@ resetButton.addEventListener('click', function(e) { // when the reset button is 
                 } else if (randomNumber === 8) {
                     e.target.classList.add('light-blue');
                 } else if (randomNumber === 9) {
-                    e.target.classList.add('white');
+                    e.target.classList.add('indigo');
                 } else {
                     e.target.classList.add('brown');
                 }
