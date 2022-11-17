@@ -18,7 +18,30 @@ resetButton.addEventListener('click', function(e) { // when the reset button is 
         let px = 500 / input; // finds what the width and height of each box should be to fit in 500 x 500 container
         document.querySelectorAll('.gridDiv').forEach(gridDiv => { // for each div with a class of grid div
             gridDiv.addEventListener('mouseover', function(e)  { // look for when div is hovered over
-                e.target.classList.add('hover'); // add class of hover which changes background to black
+                let randomNumber = Math.floor(Math.random() * 11);
+                if (randomNumber === 0) {
+                    e.target.classList.add('black');
+                } else if (randomNumber === 1) {
+                    e.target.classList.add('red');
+                } else if (randomNumber === 2) {
+                    e.target.classList.add('orange');
+                } else if (randomNumber === 3) {
+                    e.target.classList.add('yellow');
+                } else if (randomNumber === 4) {
+                    e.target.classList.add('green');
+                } else if (randomNumber === 5) {
+                    e.target.classList.add('blue');
+                } else if (randomNumber === 6) {
+                    e.target.classList.add('purple');
+                } else if (randomNumber === 7) {
+                    e.target.classList.add('pink');
+                } else if (randomNumber === 8) {
+                    e.target.classList.add('light-blue');
+                } else if (randomNumber === 9) {
+                    e.target.classList.add('white');
+                } else {
+                    e.target.classList.add('brown');
+                }
                })
             gridDiv.style.width = `${px}px`; // adds correct width and height
         gridDiv.style.height = `${px}px`; 
